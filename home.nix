@@ -34,6 +34,9 @@
     ethtool
     pciutils # lspci
     usbutils # lsusb
+
+    _1password-cli
+    _1password-gui
   ];
 
   programs.git = {

@@ -36,7 +36,6 @@
     usbutils # lsusb
   ];
 
-  # basic configuration of git, please change to your own
   programs.git = {
     enable = true;
     userName = "Sam Burba";
@@ -49,7 +48,6 @@
   programs.zsh = {
     enable = true;
     enableCompletion = true;
-    # TODO add your custom bashrc here
     initContent = ''
       export PATH="$PATH:$HOME/.local/bin"
     '';
@@ -60,7 +58,6 @@
       theme = "robbyrussell";
     };
 
-    # set some aliases, feel free to add more or remove some
     shellAliases = {
       sudo = "sudo ";
       nixup = "sudo nixos-rebuild switch";

@@ -96,6 +96,12 @@
       "org/gnome/shell/extensions/pop-shell" = {
         tile-by-default = true;
       };
+      "org/gnome/desktop/wm/keybindings" = {
+        minimize = [];
+      };
+      "org/gnome/shell/keybindings" = {
+        toggle-quick-settings = [];
+      };
     };
   };
 

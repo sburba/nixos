@@ -35,6 +35,7 @@
     pciutils # lspci
     usbutils # lsusb
 
+    gh
     _1password-cli
     _1password-gui
   ];

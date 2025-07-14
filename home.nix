@@ -113,6 +113,15 @@
         # Overlaps with pop-shell's keybindings
         toggle-quick-settings = [];
       };
+      "org/gnome/desktop/datetime" = {
+        automatic-timezone = true;
+      };
+      "org/gnome/desktop/interface" = {
+        clock-format = "12h";
+      };
+      "org/gtk/settings/file-chooser" = {
+        clock-format = "12h";
+      };
     };
   };
 

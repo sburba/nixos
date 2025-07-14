@@ -123,6 +123,9 @@
       "org/gtk/settings/file-chooser" = {
         clock-format = "12h";
       };
+      "org/gnome/Console" = {
+        theme = "auto";
+      };
     };
   };
 

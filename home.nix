@@ -80,6 +80,7 @@
     shellAliases = {
       sudo = "sudo ";
       nixup = "sudo nixos-rebuild switch";
+      nixtest = "sudo nixos-rebuild test";
       urldecode = "python3 -c 'import sys, urllib.parse as ul; print(ul.unquote_plus(sys.stdin.read()))'";
       urlencode = "python3 -c 'import sys, urllib.parse as ul; print(ul.quote_plus(sys.stdin.read()))'";
     };

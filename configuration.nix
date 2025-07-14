@@ -137,6 +137,7 @@
     neovim
     wget
     curl
+    wl-clipboard
     gnomeExtensions.caffeine
     gnomeExtensions.pop-shell
   ];

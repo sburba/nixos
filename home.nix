@@ -36,9 +36,13 @@
     pciutils # lspci
     usbutils # lsusb
 
+    # Development
     gh
+
+    # GUIs
     _1password-cli
     _1password-gui
+    icon-library
   ];
 
   programs.git = {

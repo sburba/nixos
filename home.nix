@@ -106,9 +106,11 @@
         tile-by-default = true;
       };
       "org/gnome/desktop/wm/keybindings" = {
+        # Overlaps with pop-shell's keybindings
         minimize = [];
       };
       "org/gnome/shell/keybindings" = {
+        # Overlaps with pop-shell's keybindings
         toggle-quick-settings = [];
       };
     };

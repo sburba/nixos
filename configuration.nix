@@ -92,6 +92,9 @@
     variant = "";
   };
 
+  # Allow mullvad VPN to work
+  networking.firewall.checkReversePath = false;
+
   # Enable CUPS to print documents.
   services.printing.enable = true;
 

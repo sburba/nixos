@@ -18,7 +18,7 @@
           ./configuration.nix
 	  nixos-hardware.nixosModules.framework-13-7040-amd
           ./autoupdate.nix
-	  ./1password.nix
+          ./1password.nix
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;

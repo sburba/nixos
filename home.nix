@@ -85,14 +85,18 @@
     };
   };
 
+  programs.vscode = {
+    enable = true;
+  }
+
   dconf = {
     enable = true;
     settings = {
       "org/gnome/shell" = {
         enabled-extensions = [
           pkgs.gnomeExtensions.caffeine.extensionUuid
-	  pkgs.gnomeExtensions.pop-shell.extensionUuid
-	];
+          pkgs.gnomeExtensions.pop-shell.extensionUuid
+        ];
       };
       "org/home/mutter" = {
         edge-tiling = false;

@@ -40,8 +40,6 @@
     gh
 
     # GUIs
-    _1password-cli
-    _1password-gui
     icon-library
   ];
 

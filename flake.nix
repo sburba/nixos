@@ -17,6 +17,7 @@
         modules = [
           ./configuration.nix
 	  nixos-hardware.nixosModules.framework-13-7040-amd
+          ./autoupdate.nix
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;

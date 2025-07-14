@@ -14,12 +14,14 @@
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/084ad9e2-3ef6-4371-82fe-0858b2dfd046";
+    { device = "/dev/disk/by-uuid/44befb35-a672-430b-829c-703264b88636";
       fsType = "ext4";
     };
 
+  boot.initrd.luks.devices."luks-07fa940f-8ecc-47b5-bf9a-9dc4f276cf24".device = "/dev/disk/by-uuid/07fa940f-8ecc-47b5-bf9a-9dc4f276cf24";
+
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/7458-A333";
+    { device = "/dev/disk/by-uuid/89F8-B21D";
       fsType = "vfat";
       options = [ "fmask=0077" "dmask=0077" ];
     };

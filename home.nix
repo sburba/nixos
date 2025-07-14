@@ -87,7 +87,8 @@
 
   programs.vscode = {
     enable = true;
-  }
+    package = pkgs.vscode.fhs;
+  };
 
   dconf = {
     enable = true;

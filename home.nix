@@ -12,6 +12,7 @@
 
     # utils
     jq # A lightweight and flexible command-line JSON processor
+    wl-clipboard # cli copy/past
 
     # nix related
     #

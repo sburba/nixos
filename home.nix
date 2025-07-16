@@ -98,6 +98,7 @@
         enabled-extensions = [
           pkgs.gnomeExtensions.caffeine.extensionUuid
           pkgs.gnomeExtensions.pop-shell.extensionUuid
+          pkgs.gnomeExtensions.weather-oclock.extensionUuid
         ];
       };
       "org/home/mutter" = {

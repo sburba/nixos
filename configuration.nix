@@ -143,6 +143,7 @@
     wl-clipboard
     gnomeExtensions.caffeine
     gnomeExtensions.pop-shell
+    gnomeExtensions.weather-oclock
   ];
 
   programs.zsh.enable = true;

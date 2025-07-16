@@ -127,6 +127,9 @@
       "org/gnome/Console" = {
         theme = "auto";
       };
+      "org/gnome/desktop/input-sources" = {
+        xkb-options = ["caps:swapescape"];
+      };
     };
   };
 

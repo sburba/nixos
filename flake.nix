@@ -16,8 +16,8 @@
         system = "x86_64-linux";
         modules = [
           ./configuration.nix
-	  ./hardware/laptop-hardware.nix
-	  nixos-hardware.nixosModules.framework-13-7040-amd
+          ./hardware/laptop-hardware.nix
+          nixos-hardware.nixosModules.framework-13-7040-amd
           ./autoupdate.nix
           ./1password.nix
           home-manager.nixosModules.home-manager
@@ -35,7 +35,7 @@
         system = "x86_64-linux";
         modules = [
           ./configuration.nix
-	  ./hardware/desktop-hardware.nix
+          ./hardware/desktop-hardware.nix
           ./autoupdate.nix
           ./1password.nix
           home-manager.nixosModules.home-manager

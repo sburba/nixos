@@ -5,11 +5,6 @@
 { config, pkgs, lib, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-    ];
-  
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # Bootloader.
@@ -33,7 +28,7 @@
     loader = {
       systemd-boot.enable = true;
       efi.canTouchEfiVariables = true;
-      systemd-boot.configurationLimit = 10;
+      systemd-boot.configurationLimit = 5;
     };
 
     # Use latest kernel.

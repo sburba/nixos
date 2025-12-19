@@ -17,7 +17,7 @@
         modules = [
           ./configuration.nix
           ./hardware/laptop-hardware.nix
-          nixos-hardware.nixosModules.framework-13-7040-amd
+          nixos-hardware.nixosModules.framework-amd-ai-300-series
           ./autoupdate.nix
           ./1password.nix
           home-manager.nixosModules.home-manager

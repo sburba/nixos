@@ -91,6 +91,15 @@
     package = pkgs.vscode.fhs;
   };
 
+  programs.ssh = {
+    enable = true;
+    extraConfig = ''
+      Host *
+          IdentityAgent "~/.1password/agent.sock"
+    '';
+  };
+
+
   dconf = {
     enable = true;
     settings = {

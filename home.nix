@@ -43,6 +43,7 @@
     # GUIs
     icon-library
     jetbrains.rust-rover
+    signal-desktop
   ];
 
   programs.git = {

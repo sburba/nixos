@@ -20,7 +20,6 @@
     # with more details log output
     nix-output-monitor
 
-
     # Monitoring
     btop  # replacement of htop/nmon
     iotop # io monitoring
@@ -100,49 +99,6 @@
       Host *
           IdentityAgent "~/.1password/agent.sock"
     '';
-  };
-
-
-  dconf = {
-    enable = true;
-    settings = {
-      "org/gnome/shell" = {
-        enabled-extensions = [
-          pkgs.gnomeExtensions.caffeine.extensionUuid
-          pkgs.gnomeExtensions.pop-shell.extensionUuid
-          pkgs.gnomeExtensions.weather-oclock.extensionUuid
-        ];
-      };
-      "org/home/mutter" = {
-        edge-tiling = false;
-      };
-      "org/gnome/shell/extensions/pop-shell" = {
-        tile-by-default = true;
-      };
-      "org/gnome/desktop/wm/keybindings" = {
-        # Overlaps with pop-shell's keybindings
-        minimize = [];
-      };
-      "org/gnome/shell/keybindings" = {
-        # Overlaps with pop-shell's keybindings
-        toggle-quick-settings = [];
-      };
-      "org/gnome/desktop/datetime" = {
-        automatic-timezone = true;
-      };
-      "org/gnome/desktop/interface" = {
-        clock-format = "12h";
-      };
-      "org/gtk/settings/file-chooser" = {
-        clock-format = "12h";
-      };
-      "org/gnome/Console" = {
-        theme = "auto";
-      };
-      "org/gnome/desktop/input-sources" = {
-        xkb-options = ["caps:swapescape"];
-      };
-    };
   };
 
   # This value determines the home Manager release that your

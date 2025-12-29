@@ -38,6 +38,8 @@
 
     # Development
     gh
+    devenv
+    direnv
 
     # GUIs
     icon-library
@@ -69,6 +71,7 @@
     enableCompletion = true;
     initContent = ''
       export PATH="$PATH:$HOME/.local/bin"
+      eval "$(direnv hook zsh)"
     '';
 
     oh-my-zsh = {

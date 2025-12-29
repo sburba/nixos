@@ -78,7 +78,7 @@
 
     oh-my-zsh = {
       enable = true;
-      plugins = [ "git" "vi-mode" "ssh-agent" ];
+      plugins = [ "git" "vi-mode" ];
       theme = "robbyrussell";
     };
 

@@ -113,8 +113,13 @@
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
+  # Use gdm for login manager
+  services.xserver.displayManager.gdm.enable = true;
+
   # Enable the COSMIC login manager
-  services.displayManager.cosmic-greeter.enable = true;
+  # Disabled for now because fingerprint auth doesn't work
+  # services.displayManager.cosmic-greeter.enable = true;
+
   # Enable the COSMIC desktop environment
   services.desktopManager.cosmic.enable = true;
 

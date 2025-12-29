@@ -44,6 +44,7 @@
     icon-library
     jetbrains.rust-rover
     signal-desktop
+    google-chrome
   ];
 
   programs.git = {

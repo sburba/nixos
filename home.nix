@@ -42,6 +42,7 @@
 
     # GUIs
     icon-library
+    jetbrains.rust-rover
   ];
 
   programs.git = {

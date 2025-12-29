@@ -53,9 +53,6 @@
     userEmail = "github@samburba.com";
     extraConfig = {
       init.defaultBranch = "main";
-      safe.directory = [
-        "/etc/nixos"
-      ];
     };
   };
 

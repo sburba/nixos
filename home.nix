@@ -1,5 +1,11 @@
-{ config, pkgs, ... }:
+{ config, pkgs, nixpkgs-unstable, ... }:
 
+let
+  unstable = import nixpkgs-unstable {
+    inherit (pkgs) system;
+    config.allowUnfree = true;
+  };
+in
 {
   home.username = "sburba";
   home.homeDirectory = "/home/sburba";
@@ -42,7 +48,7 @@
 
     # GUIs
     icon-library
-    jetbrains.rust-rover
+    unstable.jetbrains.rust-rover
     signal-desktop
     google-chrome
   ];

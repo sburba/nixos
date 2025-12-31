@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
+    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     home-manager = {
       url = "github:nix-community/home-manager/release-25.05";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -10,7 +11,7 @@
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
   };
 
-  outputs = inputs@{ nixpkgs, home-manager, nixos-hardware, ... }: {
+  outputs = inputs@{ nixpkgs, nixpkgs-unstable, home-manager, nixos-hardware, ... }: {
     nixosConfigurations = {
       sburba-laptop = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -28,6 +29,9 @@
 
             # Optionally, use home-manager.extraSpecialArgs to pass
             # arguments to home.nix
+            home-manager.extraSpecialArgs = {
+              inherit nixpkgs-unstable;
+            };
           }
         ];
       };
@@ -46,6 +50,9 @@
 
             # Optionally, use home-manager.extraSpecialArgs to pass
             # arguments to home.nix
+            home-manager.extraSpecialArgs = {
+              inherit nixpkgs-unstable;
+            };
           }
         ];
       };

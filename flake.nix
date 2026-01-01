@@ -21,6 +21,7 @@
           nixos-hardware.nixosModules.framework-amd-ai-300-series
           ./autoupdate.nix
           ./1password.nix
+          ./steam.nix
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
@@ -42,6 +43,7 @@
           ./hardware/desktop-hardware.nix
           ./autoupdate.nix
           ./1password.nix
+          ./steam.nix
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;

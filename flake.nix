@@ -19,6 +19,7 @@
           ./configuration.nix
           ./hardware/laptop-hardware.nix
           nixos-hardware.nixosModules.framework-amd-ai-300-series
+          ./laptop-wifi.nix
           ./autoupdate.nix
           ./1password.nix
           ./steam.nix

@@ -126,6 +126,11 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  virtualisation.podman = {
+    enable = true;
+    dockerCompat = true;
+  };
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -134,6 +139,7 @@
     wget
     curl
     wl-clipboard
+    distrobox
   ];
 
   programs.zsh.enable = true;

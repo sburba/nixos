@@ -40,6 +40,7 @@ in
     ethtool
     pciutils # lspci
     usbutils # lsusb
+    nmap
 
     # Development
     gh

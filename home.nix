@@ -108,6 +108,10 @@ in
     extraConfig = ''
       Host *
           IdentityAgent "~/.1password/agent.sock"
+
+      Host server
+        Port 2224
+        Hostname login.burba.io
     '';
   };
 

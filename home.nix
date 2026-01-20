@@ -52,6 +52,7 @@ in
     unstable.jetbrains.rust-rover
     signal-desktop
     google-chrome
+    steam
   ];
 
   programs.git = {

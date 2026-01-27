@@ -57,9 +57,11 @@ in
 
   programs.git = {
     enable = true;
-    userName = "Sam Burba";
-    userEmail = "github@samburba.com";
-    extraConfig = {
+    settings = {
+      user = {
+        name = "Sam Burba";
+        email = "github@samburba.com";
+      };
       init.defaultBranch = "main";
     };
   };
@@ -106,14 +108,16 @@ in
 
   programs.ssh = {
     enable = true;
-    extraConfig = ''
-      Host *
-          IdentityAgent "~/.1password/agent.sock"
-
-      Host server
-        Port 2224
-        Hostname login.burba.io
-    '';
+    enableDefaultConfig = false;
+    matchBlocks = {
+      "*" = {
+        identityAgent = "~/.1password/agent.sock";
+      };
+      "server" = {
+        hostname = "login.burba.io";
+        port = 2224;
+      };
+    };
   };
 
   # This value determines the home Manager release that your

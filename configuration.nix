@@ -114,7 +114,7 @@
   # services.xserver.libinput.enable = true;
 
   # Use gdm for login manager
-  services.xserver.displayManager.gdm.enable = true;
+  services.displayManager.gdm.enable = true;
 
   # Enable the COSMIC login manager
   # Disabled for now because fingerprint auth doesn't work

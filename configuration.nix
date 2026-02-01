@@ -58,6 +58,9 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
+  # Enabled for noctalia
+  hardware.bluetooth.enable = true;
+
   # Set your time zone.
   time.timeZone = "America/Los_Angeles";
 

@@ -6,6 +6,8 @@
 
 {
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  # Sometimes we hit this cap, no reason for it to small
+  nix.settings.download-buffer-size = 16 * 1024 * 1024; # 16 MiB
 
   nix.extraOptions = ''
     extra-substituters = https://devenv.cachix.org

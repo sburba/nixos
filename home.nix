@@ -41,6 +41,7 @@ in
     pciutils # lspci
     usbutils # lsusb
     nmap
+    dig
 
     # Development
     gh

@@ -121,6 +121,22 @@ in
     };
   };
 
+  # Enable floating by default for the following apps
+  home.file.".config/cosmic/com.system76.CosmicSettings.WindowRules/v1/tiling_exception_custom".text = ''
+[
+  (
+    appid: "signal",
+    title: ".*",
+    enabled: true,
+  ),
+  (
+    appid: "1password",
+    title: ".*",
+    enabled: true,
+  )
+]
+  '';
+
   # This value determines the home Manager release that your
   # configuration is compatible with. This helps avoid breakage
   # when a new home Manager release introduces backwards

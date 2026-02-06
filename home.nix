@@ -50,7 +50,6 @@ in
 
     # GUIs
     icon-library
-    unstable.jetbrains.rust-rover
     signal-desktop
     google-chrome
     steam

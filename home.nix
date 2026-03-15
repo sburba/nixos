@@ -45,7 +45,7 @@ in
 
     # Development
     gh
-    devenv
+    unstable.devenv
     direnv
 
     # GUIs

@@ -10,6 +10,11 @@
       url = "github:nix-community/home-manager/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    antigravity-nix = {
+      url = "github:jacopone/antigravity-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = inputs@{
@@ -17,6 +22,7 @@
     nixpkgs-unstable,
     home-manager,
     nixos-hardware,
+    antigravity-nix,
     ...
   }:
   let
@@ -29,14 +35,13 @@
       ./steam.nix
       ./jetbrains-toolbox.nix
 
-
       home-manager.nixosModules.home-manager
       {
         home-manager.useGlobalPkgs = true;
         home-manager.useUserPackages = true;
         home-manager.users.sburba = ./home.nix;
         home-manager.extraSpecialArgs = {
-          inherit nixpkgs-unstable;
+          inherit nixpkgs-unstable antigravity-nix;
         };
       }
     ];

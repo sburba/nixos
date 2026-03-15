@@ -1,4 +1,4 @@
-{ config, pkgs, nixpkgs-unstable, ... }:
+{ config, pkgs, nixpkgs-unstable, antigravity-nix, ... }:
 
 let
   unstable = import nixpkgs-unstable {
@@ -53,6 +53,7 @@ in
     signal-desktop
     google-chrome
     steam
+    antigravity-nix.packages.${pkgs.system}.default
   ];
 
   programs.git = {

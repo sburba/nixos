@@ -60,6 +60,11 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
+  networking.extraHosts =
+    ''
+    127.0.0.1 ttbud.local
+    '';
+
   # Enabled for noctalia
   hardware.bluetooth.enable = true;
 

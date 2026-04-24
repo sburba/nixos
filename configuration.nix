@@ -162,7 +162,7 @@
   users.users.sburba = {
     isNormalUser = true;
     description = "Sam Burba";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "kvm" ];
     shell = pkgs.zsh;
     packages = with pkgs; [
       neovim

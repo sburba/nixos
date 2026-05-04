@@ -150,6 +150,7 @@
     curl
     wl-clipboard
     distrobox
+    podman-compose
   ];
 
   programs.zsh.enable = true;

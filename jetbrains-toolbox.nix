@@ -46,6 +46,7 @@
     harfbuzz
     icu
     keyutils.lib
+    libbsd
     libGL
     libGLU
     libappindicator-gtk2
@@ -63,6 +64,7 @@
     libmikmod
     libogg
     libpng12
+    libpng
     libpulseaudio
     librsvg
     libsamplerate
@@ -77,6 +79,7 @@
     libvpx
     libxcrypt-legacy
     libxkbcommon
+    xorg.libxkbfile
     libxml2
     mesa
     nspr

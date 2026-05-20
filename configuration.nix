@@ -140,6 +140,7 @@
     enable = true;
     dockerCompat = true;
   };
+  virtualisation.libvirtd.enable = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget

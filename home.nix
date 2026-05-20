@@ -47,6 +47,7 @@ in
     gh
     unstable.devenv
     direnv
+    gnome-boxes
 
     # GUIs
     icon-library

@@ -73,6 +73,8 @@ in
     enable = true;
     defaultEditor = true;
     vimAlias = true;
+    withPython3 = false;
+    withRuby = false;
     extraConfig = ''
       set expandtab
       set tabstop=2
@@ -114,7 +116,7 @@ in
   programs.ssh = {
     enable = true;
     enableDefaultConfig = false;
-    matchBlocks = {
+    settings = {
       "*" = {
         identityAgent = "~/.1password/agent.sock";
       };
